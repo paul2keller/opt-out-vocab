@@ -1,0 +1,30 @@
+= Opt-Out Vocabulary
+Leonard Rosenthol <lrosenth@adobe.com>
+1.0, {docdate}: DRAFT
+:toc: macro
+:outlinelevels: 3 
+:appendix-caption: Appendix
+
+ifdef::backend-pdf[]
+[.authors]
+// {author} + 
+{revnumber} {revremark} : {revdate}
+endif::[]
+
+// table of contents goes here
+toc::[] 
+
+// [abstract]
+== Abstract
+
+
+// page break
+<<<
+
+// start numbering the sections from here...
+:sectnums:
+
+== Use Cases
+
+== Proposed Vocabulary
+
