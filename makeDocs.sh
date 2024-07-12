@@ -68,7 +68,8 @@ convertOne() {
 			-a pdf-fontsdir="fonts"  \
 			-o "${BASE_NAME}".pdf "${BASE_NAME}".adoc	
 
-	# This doesn't work, but would have been so much better!
+	# This doesn't work as noted at https://github.com/asciidoctor/docker-asciidoctor/issues/430	
+	# 	when that issue is resolved, we'll switch to this much better method for EPUB creation!
 	# Create the EPUB3 version
 	# echo "Converting "${BASE_NAME}".adoc to EPUB3"
 	# docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}" \
@@ -91,6 +92,7 @@ convertOne() {
 			-f docbook -t docx \
 			-o "${BASE_NAME}".docx "${BASE_NAME}".xml
 
+	# TEMP method for creating an EPUB...
 	# Convert the DocBook to EPUB
 	echo "Converting "${BASE_NAME}".xml to EPUB3"
 	docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}"/output \
