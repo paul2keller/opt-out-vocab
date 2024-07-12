@@ -68,6 +68,14 @@ convertOne() {
 			-a pdf-fontsdir="fonts"  \
 			-o "${BASE_NAME}".pdf "${BASE_NAME}".adoc	
 
+	# This doesn't work, but would have been so much better!
+	# Create the EPUB3 version
+	# echo "Converting "${BASE_NAME}".adoc to EPUB3"
+	# docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}" \
+	# 		"${AD_DOCKER_IMG}" asciidoctor-epub3 -r asciidoctor-diagram \
+	# 		-D ./output \
+	# 		-o "${BASE_NAME}".epub "${BASE_NAME}".adoc	
+
 	# Create the DocBook versions
 	echo "Converting "${BASE_NAME}".adoc to DocBook"
 	docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}" \
@@ -82,9 +90,16 @@ convertOne() {
 			"${PD_DOCKER_IMG}" \
 			-f docbook -t docx \
 			-o "${BASE_NAME}".docx "${BASE_NAME}".xml
+
+	# Convert the DocBook to EPUB
+	echo "Converting "${BASE_NAME}".xml to EPUB3"
+	docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}"/output \
+			"${PD_DOCKER_IMG}" \
+			-f docbook -t epub \
+			-o "${BASE_NAME}".epub "${BASE_NAME}".xml
 }
 
 # process all the files	
 
-convertOne "./lrosenth_fellow_promotion.adoc"
+convertOne "./OptOutVocab.adoc"
 
