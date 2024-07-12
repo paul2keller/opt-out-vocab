@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Opt-Out Vocabulary</title>
+<date>2024-07-12</date>
+<author>
+<personname>
+<firstname>Leonard</firstname>
+<surname>Rosenthol</surname>
+</personname>
+<email>lrosenth@adobe.com</email>
+</author>
+<authorinitials>LR</authorinitials>
+<revhistory>
+<revision>
+<revnumber>1.0</revnumber>
+<date>2024-07-12</date>
+<authorinitials>LR</authorinitials>
+<revremark>DRAFT</revremark>
+</revision>
+</revhistory>
+</info>
+
+<section xml:id="_abstract">
+<title>Abstract</title>
+<simpara>This document describes a proposed Opt-Out Vocabulary that can be used by various methods - be they location-based or unit-based - to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow.</simpara>
+<simpara><?asciidoc-pagebreak?></simpara>
+</section>
+<section xml:id="_terms_and_definitions">
+<title>Terms and Definitions</title>
+<variablelist>
+<varlistentry>
+<term>Rightsholder</term>
+<listitem>
+<simpara>Person or organization that owns the legal rights to something. See <link xl:href="https://en.wiktionary.org/wiki/rightsholder">Wiktionary</link>.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</section>
+<section xml:id="_use_cases">
+<title>Use Cases</title>
+
+</section>
+<section xml:id="_proposed_vocabulary">
+<title>Proposed Vocabulary</title>
+<section xml:id="_categories">
+<title>Categories</title>
+<simpara>The following categories are proposed for use in the Opt-Out Vocabulary, based on the set of use cases identified in the previous section:</simpara>
+<variablelist>
+<varlistentry>
+<term>TDM</term>
+<listitem>
+<simpara>Text and Data Mining. The <link xl:href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0790&amp;from=EN">Copyright in the Digital Single Market (CDSM) Directive</link> defines TDM as "any automated analytical technique aiming to analyse text and data in digital form to generate information such as patterns, trends and correlations" (Article 2.2).</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Search</term>
+<listitem>
+<simpara>The act of indexing the content (and/or metadata) of assets for the purpose of retrieval.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>AI Training</term>
+<listitem>
+<simpara>The act of training an AI/ML (Artificial Intelligence/Machine Learning) model using one or more assets as input. This can include training for classification, object detection, as well as generative AI.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Generative AI Training</term>
+<listitem>
+<simpara>A form of <literal>AI Training</literal> where the AI/ML model being trained can generate new assets based on the training data.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<simpara>In addition to the pre-defined categories, it is also expected that some systems may extend this list with additional categories for their particular needs.</simpara>
+</section>
+<section xml:id="_relationship">
+<title>Relationship</title>
+<simpara>The <literal>TDM</literal> category is the overarching category that includes all of the others. This is because all of those other activities are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of all of the other categories as well.</simpara>
+<simpara>The <literal>AI Training</literal> category includes <literal>Generative AI Training</literal> as well as other forms of AI training. This is because all generative AI training is a form of AI training, but not all AI training is generative.</simpara>
+<simpara><link linkend="categories-diagram">The figure below</link> shows the relationship between the categories.</simpara>
+<figure xml:id="categories.diagram">
+<title>Relationship between the categories</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="categories.drawio.svg"/>
+</imageobject>
+<textobject><phrase>Example diagram showing the relationship between the categories</phrase></textobject>
+</mediaobject>
+</figure>
+</section>
+</section>
+</article>
