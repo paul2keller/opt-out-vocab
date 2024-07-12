@@ -1,0 +1,8 @@
+// cSpell Settings
+{
+    // Version of the setting file.  Always 0.2
+    "version": "0.2",
+    // language - current active spelling language
+	//	standards should always be in International English (en-GB)
+    "language": "en-GB"
+}
