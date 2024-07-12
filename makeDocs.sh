@@ -68,15 +68,6 @@ convertOne() {
 			-a pdf-fontsdir="fonts"  \
 			-o "${BASE_NAME}".pdf "${BASE_NAME}".adoc	
 
-	# This doesn't work as noted at https://github.com/asciidoctor/docker-asciidoctor/issues/430	
-	# 	when that issue is resolved, we'll switch to this much better method for EPUB creation!
-	# Create the EPUB3 version
-	# echo "Converting "${BASE_NAME}".adoc to EPUB3"
-	# docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}" \
-	# 		"${AD_DOCKER_IMG}" asciidoctor-epub3 -r asciidoctor-diagram \
-	# 		-D ./output \
-	# 		-o "${BASE_NAME}".epub "${BASE_NAME}".adoc	
-
 	# Create the DocBook versions
 	echo "Converting "${BASE_NAME}".adoc to DocBook"
 	docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}" \
@@ -92,13 +83,15 @@ convertOne() {
 			-f docbook -t docx \
 			-o "${BASE_NAME}".docx "${BASE_NAME}".xml
 
-	# TEMP method for creating an EPUB...
-	# Convert the DocBook to EPUB
-	echo "Converting "${BASE_NAME}".xml to EPUB3"
-	docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}"/output \
-			"${PD_DOCKER_IMG}" \
-			-f docbook -t epub \
-			-o "${BASE_NAME}".epub "${BASE_NAME}".xml
+	# This doesn't work with standard AD as noted at https://github.com/asciidoctor/docker-asciidoctor/issues/430	
+	# So we use an older version w/o the problem (as recommended in https://github.com/lirantal/asciidoc-book-starter/issues/9)
+	# Create the EPUB3 version
+	echo "Converting "${BASE_NAME}".adoc to EPUB3"
+	docker run --rm -v "${CURRENT_PATH}":"${CURRENT_PATH}" -w "${CURRENT_PATH}" \
+			"${AD_DOCKER_IMG}:1.63" asciidoctor-epub3 -r asciidoctor-diagram \
+			-D ./output \
+			-o "${BASE_NAME}".epub "${BASE_NAME}".adoc	
+
 }
 
 # process all the files	
