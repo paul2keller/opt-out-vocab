@@ -61,7 +61,7 @@ In addition to the pre-defined categories, it is also expected that some systems
 
 === Relationship
 
-The `TDM` category is the overarching category that includes all of the others. This is because all of those other activities are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of all of the other categories as well.
+The `TDM` category is the overarching category that includes all of the others. This is because activities, reflected in these categories, are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of all of the other categories as well.
 
 The `AI Training` category includes `Generative AI Training` as well as other forms of AI training. This is because all generative AI training is a form of AI training, but not all AI training is generative.
 
