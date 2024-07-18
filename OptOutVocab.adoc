@@ -49,9 +49,9 @@ Unit-based identifiers:: A machine-readable piece of information that identifies
 
 The following categories are proposed for use in the Opt-Out Vocabulary, based on the set of use cases identified in the previous section:
 
-TDM:: Text and Data Mining. The Copyright in the Digital Single Market (CDSM) Directive defines TDM as "any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations" (Article 2.2).
-
 Search and Discovery:: The act of indexing the content (and/or metadata) of assets for the purpose of retrieval.
+
+TDM:: Text and Data Mining. The Copyright in the Digital Single Market (CDSM) Directive defines TDM as "any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations" (Article 2.2).
 
 AI Training:: The act of training an AI/ML (Artificial Intelligence/Machine Learning) model using one or more assets as input. This can include training for classification, object detection, as well as generative AI.
 
@@ -61,9 +61,9 @@ In addition to the pre-defined categories, it is also expected that some systems
 
 === Relationship
 
-The `TDM` category is the overarching category that includes all of the others. This is because activities, reflected in these categories, are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of all of the other categories as well.
+`Search and Discovery` is a category that is separate from the others, as it is not a form of TDM or AI Training. It is however reflected here as some opt-out systems (i.e., `robots.txt`) include this category.
 
-The `AI Training` category includes `Generative AI Training` as well as other forms of AI training. This is because all generative AI training is a form of AI training, but not all AI training is generative.
+The `TDM` category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of those other categories as well.
 
 <<categories-diagram, The figure below>> shows the relationship between the categories.
 
