@@ -17,13 +17,11 @@ toc::[]
 // [abstract]
 == Abstract
 
-Transparency of the data used to train AI models is a prerequisite for understanding how these models work. It is crucial for improving accountability in AI development and can strengthen people's ability to exercise their fundamental rights. Yet, opacity in training data is often used to protect AI-developing companies from scrutiny and competition, affecting both copyright holders and anyone else trying to get a better understanding of how these models function.
-
-https://openfuture.eu[Open Future], is committed to advancing openness, transparency, and good governance in AI development. As part of this commitment, they have written a series of white papers on the topic of AI and rights including https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf[Considerations FOR opt-out compliance policies by AI model developers].  In that paper, it describes the framework for machine-readable rights reservations required by Article 4(3) of the https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32019L0790[Copyright in the Digital Single Markets (CDSM)] directive statement as: 
+This document provides a common vocabulary that seeks to standardize machine readable rights reservations and other rightholder opt-outs from using works protected by copyright and related rights in the context of AI/ML training and other forms of Text and Data Mininig (TDM). It has been developed to adress one of the issues identified in this April 2024 policy brief by https://openfuture.eu[Open Future]: https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf[Considerations for opt-out compliance policies by AI model developers]. The paper dentifies four different concepts that require consensus among stakeholders in order to ensure that opt-outs / rights reservation can be expressed in a way that is effective, scalable, and able to meet the needs of both rights holders and AI model developers. the four concepts are (in bold): 
 
 > If you tell us what **{identifier}** you want to opt out from which uses **{vocabulary}** via these means **{infrastructure}** then we will do this **{effect of opt-out}**.
 
-This document focuses on the **{vocabulary}** pieces of that statement by describing a proposed Opt-Out Vocabulary that can be used to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow. It is intended to be useful for both location-based as well as unit-based asset identifiers.
+This document focuses on the **{vocabulary}** piece of this statement by describing a proposed opt-out Vocabulary that can be used to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow. The purpose of the vocabulary is to provide a stable set of categories that can be used by rightholders to specify the scope of opt-outs / rights reservations they wish to make. A stable, well defined set of rights reservations will ensure that opt-out reservation can be exchanged across value change and that different systems to communicate, process and store opt-oyt / rights reservations can be deigned in an interoperable way. The vocabulary is implementation agnostic and can be implemented in a variety of opt-out schemes including `location-based` and `unit-based` schemes. 
 
 // page break
 <<<
@@ -35,7 +33,7 @@ This document focuses on the **{vocabulary}** pieces of that statement by descri
 
 Asset:: A digital file or stream of data containing content and usually with associated metadata. 
 
-Rightsholder:: Person or organization that owns the legal rights to something. See https://en.wiktionary.org/wiki/rightsholder[Wiktionary].
+Rightsholder:: Person or organization that owns the legal rights to something. In this context preliminary holders of copyight and related rights.
 
 Location-based identifiers:: A machine-readable location, such as a domain or URL, for use in identification of assets. 
 
