@@ -33,7 +33,7 @@ This document focuses on the **{vocabulary}** piece of this statement by describ
 
 Asset:: A digital file or stream of data containing content and usually with associated metadata. 
 
-Rightsholder:: Person or organization that owns the legal rights to something. In this context preliminary holders of copyight and related rights.
+Rightsholder:: Person or organization that owns the legal rights to something. In this context preliminary holders of copyright and related rights.
 
 Location-based identifiers:: A machine-readable location, such as a domain or URL, for use in identification of assets. 
 
@@ -49,23 +49,19 @@ The vocabulary consists of the overarching Text and Data Mining (`TDM`) category
 
 === Categories
 
-The following categories are proposed for use in the Opt-Out Vocabulary, based on the set of use cases identified in the previous section:
+The following categories are proposed for use in the Opt-Out Vocabulary.
 
-Search:: The act of indexing the content (and/or metadata) of assets for the purpose of retrieval.
+TDM:: Text and Data Mining. The act of using one or more assets in the context of any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations for purposes other than scientific reserach.
 
-TDM:: Text and Data Mining. The Copyright in the Digital Single Market (CDSM) Directive defines TDM as "any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations" (Article 2.2).
+AI Training:: The act of training AI/ML models that are NOT capable of generating text, images, and other synthetic content on one or more assets as input. examples are models than can be used for classification or object detection.
 
-AI Training:: The act of training an AI/ML (Artificial Intelligence/Machine Learning) model using one or more assets as input. This can include training for classification, object detection, as well as generative AI.
+Generative AI Training:: The act of training AI/ML models that are capable of generating text, images, and other synthetic content on one or more assets as input.
 
-Generative AI Training:: A form of `AI Training` where the AI/ML model being trained can generate new assets based on the training data.
-
-In addition to the pre-defined categories, it is also expected that some systems may extend this list with additional categories for their particular needs.
+This list of categories may be expanded with categories adressing additional uses cased should such use cases emerge. In addition to these categories definined in the vocabulary, it is also expected that some systems implementing this vocabulary may extend this list with additional categories for their particular needs. 
 
 === Relationship
 
-`Search and Discovery` is a category that is separate from the others, as it is not a form of TDM or AI Training. It is however reflected here as some opt-out systems (i.e., `robots.txt`) include this category.
-
-The `TDM` category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of those other categories as well.
+The `TDM` category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rightsholder opts out of / reserves the rights to `TDM`, they are opting out of those other categories as well. The other categories can be independtly adressed and affect only the specifi use case covered by the category. 
 
 <<categories-diagram, The figure below>> shows the relationship between the categories.
 
