@@ -41,7 +41,9 @@ Unit-based identifiers:: A machine-readable piece of information that identifies
 
 AI/ML Training:: The pre-training, training and fine-tuning of AI Models before their release. 
 
-== Use Cases
+== Structure
+
+The vocabulary consists of the overarching Text and Data Mining (`TDM`) category and a number or more specific use cases that can be independently adressed. The overarching `TDM` category is derived from the defintion of Text and Data minining in https://eur-lex.europa.eu/eli/dir/2019/790/oj#art_2.tit_1[Article 2(2) of the European Union's Copyright in the Digital Single Market Dorective]. For the purposes of this vocabulary TDM is not understood to cover indexing of content for the purpose of online search. This use case is adressed via the exiting https://datatracker.ietf.org/doc/html/rfc9309[Robots Exclusion Protocol]. Currently the vocabulary contains two use cases that relate to the use of assets for AI/ML training purposes.
 
 == Proposed Vocabulary
 
@@ -49,7 +51,7 @@ AI/ML Training:: The pre-training, training and fine-tuning of AI Models before 
 
 The following categories are proposed for use in the Opt-Out Vocabulary, based on the set of use cases identified in the previous section:
 
-Search and Discovery:: The act of indexing the content (and/or metadata) of assets for the purpose of retrieval.
+Search:: The act of indexing the content (and/or metadata) of assets for the purpose of retrieval.
 
 TDM:: Text and Data Mining. The Copyright in the Digital Single Market (CDSM) Directive defines TDM as "any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations" (Article 2.2).
 
