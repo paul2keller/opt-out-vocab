@@ -4,7 +4,7 @@
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Opt-Out Vocabulary</title>
-<date>2024-07-12</date>
+<date>2024-07-18</date>
 <author>
 <personname>
 <firstname>Leonard</firstname>
@@ -16,7 +16,7 @@
 <revhistory>
 <revision>
 <revnumber>1.0</revnumber>
-<date>2024-07-12</date>
+<date>2024-07-18</date>
 <authorinitials>LR</authorinitials>
 <revremark>DRAFT</revremark>
 </revision>
@@ -25,16 +25,39 @@
 
 <section xml:id="_abstract">
 <title>Abstract</title>
-<simpara>This document describes a proposed Opt-Out Vocabulary that can be used by various methods - be they location-based or unit-based - to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow.</simpara>
+<simpara>Transparency of the data used to train AI models is a prerequisite for understanding how these models work. It is crucial for improving accountability in AI development and can strengthen people&#8217;s ability to exercise their fundamental rights. Yet, opacity in training data is often used to protect AI-developing companies from scrutiny and competition, affecting both copyright holders and anyone else trying to get a better understanding of how these models function.</simpara>
+<simpara><link xl:href="https://openfuture.eu">Open Future</link>, is committed to advancing openness, transparency, and good governance in AI development. As part of this commitment, they have written a series of white papers on the topic of AI and rights including <link xl:href="https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf">Considerations FOR opt-out compliance policies by AI model developers</link>.  In that paper, it describes the framework for machine-readable rights reservations required by Article 4(3) of the <link xl:href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32019L0790">Copyright in the Digital Single Markets (CDSM)</link> directive statement as:</simpara>
+<blockquote>
+<simpara>If you tell us what <emphasis role="strong">{identifier}</emphasis> you want to opt out from which uses <emphasis role="strong">{vocabulary}</emphasis> via these means <emphasis role="strong">{infrastructure}</emphasis> then we will do this <emphasis role="strong">{effect of opt-out}</emphasis>.</simpara>
+</blockquote>
+<simpara>This document focuses on the <emphasis role="strong">{vocabulary}</emphasis> pieces of that statement by describing a proposed Opt-Out Vocabulary that can be used to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow. It is intended to be useful for both location-based as well as unit-based asset identifiers.</simpara>
 <simpara><?asciidoc-pagebreak?></simpara>
 </section>
 <section xml:id="_terms_and_definitions">
 <title>Terms and Definitions</title>
 <variablelist>
 <varlistentry>
+<term>Asset</term>
+<listitem>
+<simpara>A digital file or stream of data containing content and usually with associated metadata.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
 <term>Rightsholder</term>
 <listitem>
 <simpara>Person or organization that owns the legal rights to something. See <link xl:href="https://en.wiktionary.org/wiki/rightsholder">Wiktionary</link>.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Location-based identifiers</term>
+<listitem>
+<simpara>A machine-readable location, such as a domain or URL, for use in identification of assets.</simpara>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>Unit-based identifiers</term>
+<listitem>
+<simpara>A machine-readable piece of information that identifies a single asset (unit), regardless of where the asset is located, either through the embedding of that information directly into the asset or via a separate database or registry.</simpara>
 </listitem>
 </varlistentry>
 </variablelist>
@@ -50,15 +73,15 @@
 <simpara>The following categories are proposed for use in the Opt-Out Vocabulary, based on the set of use cases identified in the previous section:</simpara>
 <variablelist>
 <varlistentry>
-<term>TDM</term>
+<term>Search and Discovery</term>
 <listitem>
-<simpara>Text and Data Mining. The <link xl:href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L0790&amp;from=EN">Copyright in the Digital Single Market (CDSM) Directive</link> defines TDM as "any automated analytical technique aiming to analyse text and data in digital form to generate information such as patterns, trends and correlations" (Article 2.2).</simpara>
+<simpara>The act of indexing the content (and/or metadata) of assets for the purpose of retrieval.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
-<term>Search</term>
+<term>TDM</term>
 <listitem>
-<simpara>The act of indexing the content (and/or metadata) of assets for the purpose of retrieval.</simpara>
+<simpara>Text and Data Mining. The Copyright in the Digital Single Market (CDSM) Directive defines TDM as "any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations" (Article 2.2).</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -78,8 +101,8 @@
 </section>
 <section xml:id="_relationship">
 <title>Relationship</title>
-<simpara>The <literal>TDM</literal> category is the overarching category that includes all of the others. This is because all of those other activities are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of all of the other categories as well.</simpara>
-<simpara>The <literal>AI Training</literal> category includes <literal>Generative AI Training</literal> as well as other forms of AI training. This is because all generative AI training is a form of AI training, but not all AI training is generative.</simpara>
+<simpara><literal>Search and Discovery</literal> is a category that is separate from the others, as it is not a form of TDM or AI Training. It is however reflected here as some opt-out systems (i.e., <literal>robots.txt</literal>) include this category.</simpara>
+<simpara>The <literal>TDM</literal> category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of those other categories as well.</simpara>
 <simpara><link linkend="categories-diagram">The figure below</link> shows the relationship between the categories.</simpara>
 <figure xml:id="categories.diagram">
 <title>Relationship between the categories</title>
