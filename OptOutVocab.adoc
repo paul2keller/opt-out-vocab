@@ -39,6 +39,8 @@ Location-based identifiers:: A machine-readable location, such as a domain or UR
 
 Unit-based identifiers:: A machine-readable piece of information that identifies a single asset (unit), regardless of where the asset is located, either through the embedding of that information directly into the asset or via a separate database or registry.
 
+AI/ML Training:: The pre-training, training and fine-tuning of AI Models before their release. 
+
 == Use Cases
 
 == Proposed Vocabulary
