@@ -59,7 +59,7 @@ AI Training:: The act of training AI/ML models that are NOT capable of generatin
 
 Generative AI Training:: The act of training AI/ML models that are capable of generating text, images, and other synthetic content on one or more assets as input.
 
-This list of categories may be expanded with categories adressing additional uses cased should such use cases emerge. In addition to these categories definined in the vocabulary, it is also expected that some systems implementing this vocabulary may extend this list with additional categories for their particular needs. 
+This list of categories may be expanded with categories addressing additional uses cases should such use cases emerge. In addition to these categories defined in the vocabulary, it is also expected that some systems implementing this vocabulary may extend this list with additional categories for their particular needs. 
 
 === Relationship
 
