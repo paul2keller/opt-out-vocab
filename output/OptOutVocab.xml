@@ -4,7 +4,7 @@
 <article xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Opt-Out Vocabulary</title>
-<date>2024-07-18</date>
+<date>2024-07-19</date>
 <author>
 <personname>
 <firstname>Leonard</firstname>
@@ -16,7 +16,7 @@
 <revhistory>
 <revision>
 <revnumber>1.0</revnumber>
-<date>2024-07-18</date>
+<date>2024-07-19</date>
 <authorinitials>LR</authorinitials>
 <revremark>DRAFT</revremark>
 </revision>
@@ -25,12 +25,11 @@
 
 <section xml:id="_abstract">
 <title>Abstract</title>
-<simpara>Transparency of the data used to train AI models is a prerequisite for understanding how these models work. It is crucial for improving accountability in AI development and can strengthen people&#8217;s ability to exercise their fundamental rights. Yet, opacity in training data is often used to protect AI-developing companies from scrutiny and competition, affecting both copyright holders and anyone else trying to get a better understanding of how these models function.</simpara>
-<simpara><link xl:href="https://openfuture.eu">Open Future</link>, is committed to advancing openness, transparency, and good governance in AI development. As part of this commitment, they have written a series of white papers on the topic of AI and rights including <link xl:href="https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf">Considerations FOR opt-out compliance policies by AI model developers</link>.  In that paper, it describes the framework for machine-readable rights reservations required by Article 4(3) of the <link xl:href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32019L0790">Copyright in the Digital Single Markets (CDSM)</link> directive statement as:</simpara>
+<simpara>This document provides a common vocabulary that seeks to standardize machine readable rights reservations and other rightholder opt-outs from using works protected by copyright and related rights in the context of AI/ML training and other forms of Text and Data Mininig (TDM). It has been developed to adress one of the issues identified in this April 2024 policy brief by <link xl:href="https://openfuture.eu">Open Future</link>: <link xl:href="https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf">Considerations for opt-out compliance policies by AI model developers</link>. The paper dentifies four different concepts that require consensus among stakeholders in order to ensure that opt-outs / rights reservation can be expressed in a way that is effective, scalable, and able to meet the needs of both rights holders and AI model developers. the four concepts are (in bold):</simpara>
 <blockquote>
 <simpara>If you tell us what <emphasis role="strong">{identifier}</emphasis> you want to opt out from which uses <emphasis role="strong">{vocabulary}</emphasis> via these means <emphasis role="strong">{infrastructure}</emphasis> then we will do this <emphasis role="strong">{effect of opt-out}</emphasis>.</simpara>
 </blockquote>
-<simpara>This document focuses on the <emphasis role="strong">{vocabulary}</emphasis> pieces of that statement by describing a proposed Opt-Out Vocabulary that can be used to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow. It is intended to be useful for both location-based as well as unit-based asset identifiers.</simpara>
+<simpara>This document focuses on the <emphasis role="strong">{vocabulary}</emphasis> piece of this statement by describing a proposed opt-out Vocabulary that can be used to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow. The purpose of the vocabulary is to provide a stable set of categories that can be used by rightholders to specify the scope of opt-outs / rights reservations they wish to make. A stable, well defined set of rights reservations will ensure that opt-out reservation can be exchanged across value change and that different systems to communicate, process and store opt-out &amp; rights reservations can be designed in an interoperable way. The vocabulary is implementation agnostic and can be implemented in a variety of opt-out schemes including <literal>location-based</literal> and <literal>unit-based</literal> schemes.</simpara>
 <simpara><?asciidoc-pagebreak?></simpara>
 </section>
 <section xml:id="_terms_and_definitions">
@@ -45,7 +44,7 @@
 <varlistentry>
 <term>Rightsholder</term>
 <listitem>
-<simpara>Person or organization that owns the legal rights to something. See <link xl:href="https://en.wiktionary.org/wiki/rightsholder">Wiktionary</link>.</simpara>
+<simpara>Person or organization that owns the legal rights to something. In this context preliminary holders of copyright and related rights.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
@@ -60,49 +59,49 @@
 <simpara>A machine-readable piece of information that identifies a single asset (unit), regardless of where the asset is located, either through the embedding of that information directly into the asset or via a separate database or registry.</simpara>
 </listitem>
 </varlistentry>
+<varlistentry>
+<term>AI/ML Training</term>
+<listitem>
+<simpara>The pre-training, training and fine-tuning of AI Models before their release.</simpara>
+</listitem>
+</varlistentry>
 </variablelist>
 </section>
-<section xml:id="_use_cases">
-<title>Use Cases</title>
-
+<section xml:id="_structure">
+<title>Structure</title>
+<simpara>The vocabulary consists of the overarching Text and Data Mining (<literal>TDM</literal>) category and a number or more specific use cases that can be independently adressed. The overarching <literal>TDM</literal> category is derived from the definition of Text and Data mining in <link xl:href="https://eur-lex.europa.eu/eli/dir/2019/790/oj#art_2.tit_1">Article 2(2) of the European Union&#8217;s Copyright in the Digital Single Market Directive</link>. For the purposes of this vocabulary, TDM is not understood to cover indexing of content for the purpose of online search. This use case is addressed using a <literal>location-based</literal> schema such as the exiting <link xl:href="https://datatracker.ietf.org/doc/html/rfc9309">Robots Exclusion Protocol</link>.</simpara>
+<simpara>Currently the proposed vocabulary contains two use cases that relate to the use of assets for AI/ML training purposes.</simpara>
 </section>
 <section xml:id="_proposed_vocabulary">
 <title>Proposed Vocabulary</title>
 <section xml:id="_categories">
 <title>Categories</title>
-<simpara>The following categories are proposed for use in the Opt-Out Vocabulary, based on the set of use cases identified in the previous section:</simpara>
+<simpara>The following categories are proposed for use in the Opt-Out Vocabulary.</simpara>
 <variablelist>
-<varlistentry>
-<term>Search and Discovery</term>
-<listitem>
-<simpara>The act of indexing the content (and/or metadata) of assets for the purpose of retrieval.</simpara>
-</listitem>
-</varlistentry>
 <varlistentry>
 <term>TDM</term>
 <listitem>
-<simpara>Text and Data Mining. The Copyright in the Digital Single Market (CDSM) Directive defines TDM as "any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations" (Article 2.2).</simpara>
+<simpara>Text and Data Mining. The act of using one or more assets in the context of any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations for purposes other than scientific reserach.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
 <term>AI Training</term>
 <listitem>
-<simpara>The act of training an AI/ML (Artificial Intelligence/Machine Learning) model using one or more assets as input. This can include training for classification, object detection, as well as generative AI.</simpara>
+<simpara>The act of training AI/ML models that are NOT capable of generating text, images, and other synthetic content on one or more assets as input. Examples are models than can be used for classification or object detection.</simpara>
 </listitem>
 </varlistentry>
 <varlistentry>
 <term>Generative AI Training</term>
 <listitem>
-<simpara>A form of <literal>AI Training</literal> where the AI/ML model being trained can generate new assets based on the training data.</simpara>
+<simpara>The act of training AI/ML models that are capable of generating text, images, and other synthetic content on one or more assets as input.</simpara>
 </listitem>
 </varlistentry>
 </variablelist>
-<simpara>In addition to the pre-defined categories, it is also expected that some systems may extend this list with additional categories for their particular needs.</simpara>
+<simpara>This list of categories may be expanded with categories addressing additional uses cases should such use cases emerge. In addition to these categories defined in the vocabulary, it is also expected that some systems implementing this vocabulary may extend this list with additional categories for their particular needs.</simpara>
 </section>
 <section xml:id="_relationship">
 <title>Relationship</title>
-<simpara><literal>Search and Discovery</literal> is a category that is separate from the others, as it is not a form of TDM or AI Training. It is however reflected here as some opt-out systems (i.e., <literal>robots.txt</literal>) include this category.</simpara>
-<simpara>The <literal>TDM</literal> category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rightsholder opts out of TDM, they are opting out of those other categories as well.</simpara>
+<simpara>The <literal>TDM</literal> category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rights-holder opts out of or reserves the rights to <literal>TDM</literal>, they are opting out of those other categories as well. The other categories can be independently addressed and affect only the specific use case covered by the category.</simpara>
 <simpara><link linkend="categories-diagram">The figure below</link> shows the relationship between the categories.</simpara>
 <figure xml:id="categories.diagram">
 <title>Relationship between the categories</title>
