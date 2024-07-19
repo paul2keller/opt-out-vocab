@@ -43,7 +43,9 @@ AI/ML Training:: The pre-training, training and fine-tuning of AI Models before 
 
 == Structure
 
-The vocabulary consists of the overarching Text and Data Mining (`TDM`) category and a number or more specific use cases that can be independently adressed. The overarching `TDM` category is derived from the defintion of Text and Data minining in https://eur-lex.europa.eu/eli/dir/2019/790/oj#art_2.tit_1[Article 2(2) of the European Union's Copyright in the Digital Single Market Dorective]. For the purposes of this vocabulary TDM is not understood to cover indexing of content for the purpose of online search. This use case is adressed via the exiting https://datatracker.ietf.org/doc/html/rfc9309[Robots Exclusion Protocol]. Currently the vocabulary contains two use cases that relate to the use of assets for AI/ML training purposes.
+The vocabulary consists of the overarching Text and Data Mining (`TDM`) category and a number or more specific use cases that can be independently adressed. The overarching `TDM` category is derived from the definition of Text and Data mining in https://eur-lex.europa.eu/eli/dir/2019/790/oj#art_2.tit_1[Article 2(2) of the European Union's Copyright in the Digital Single Market Directive]. For the purposes of this vocabulary, TDM is not understood to cover indexing of content for the purpose of online search. This use case is addressed using a `location-based` schema such as the exiting https://datatracker.ietf.org/doc/html/rfc9309[Robots Exclusion Protocol]. 
+
+Currently the proposed vocabulary contains two use cases that relate to the use of assets for AI/ML training purposes.
 
 == Proposed Vocabulary
 
