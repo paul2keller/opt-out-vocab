@@ -5,6 +5,9 @@
 		}
 	],
 	"settings": {
-		"asciidoc.antora.enableAntoraSupport": true
+		"asciidoc.antora.enableAntoraSupport": true,
+		"cSpell.words": [
+			"rightsholders"
+		]
 	}
 }
