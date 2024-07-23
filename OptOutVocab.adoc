@@ -17,11 +17,11 @@ toc::[]
 // [abstract]
 == Abstract
 
-This document provides a common vocabulary that seeks to standardize machine readable rights reservations and other rightsholder opt-outs from using works protected by copyright and related rights in the context of AI/ML training and other forms of Text and Data Mining (TDM). It has been developed to address one of the issues identified in this April 2024 policy brief by https://openfuture.eu[Open Future]: https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf[Considerations for opt-out compliance policies by AI model developers]. The paper identifies four different concepts that require consensus among stakeholders in order to ensure that opt-outs / rights reservation can be expressed in a way that is effective, scalable, and able to meet the needs of both rights holders and AI model developers. the four concepts are (in bold): 
+This document provides a common vocabulary that seeks to standardize machine readable rights reservations and other rightholder opt-outs from using works protected by copyright and related rights in the context of AI/ML training and other forms of Text and Data Mining (TDM). It has been developed to address one of the issues identified in this April 2024 policy brief by https://openfuture.eu[Open Future]: https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf[Considerations for opt-out compliance policies by AI model developers]. The paper identifies four different concepts that require consensus among stakeholders in order to ensure that opt-outs / rights reservation can be expressed in a way that is effective, scalable, and able to meet the needs of both rights holders and AI model developers. the four concepts are (in bold): 
 
 > If you tell us what **{identifier}** you want to opt out from which uses **{vocabulary}** via these means **{infrastructure}** then we will do this **{effect of opt-out}**.
 
-This document focuses on the **{vocabulary}** piece of this statement by describing a proposed opt-out Vocabulary that can be used to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow. The purpose of the vocabulary is to provide a stable set of categories that can be used by rightsholders to specify the scope of opt-outs / rights reservations they wish to make. A stable, well defined set of rights reservations will ensure that opt-out reservation can be exchanged across value change and that different systems to communicate, process and store opt-out & rights reservations can be designed in an interoperable way. The vocabulary is implementation agnostic and can be implemented in a variety of opt-out schemes including `location-based` and `unit-based` schemes. 
+This document focuses on the **{vocabulary}** piece of this statement by describing a proposed opt-out Vocabulary that can be used to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow. The purpose of the vocabulary is to provide a stable set of categories that can be used by rightholders to specify the scope of opt-outs / rights reservations they wish to make. A stable, well defined set of rights reservations will ensure that opt-out reservation can be exchanged across value change and that different systems to communicate, process and store opt-out & rights reservations can be designed in an interoperable way. The vocabulary is implementation agnostic and can be implemented in a variety of opt-out schemes including `location-based` and `unit-based` schemes. 
 
 // page break
 <<<
@@ -33,7 +33,7 @@ This document focuses on the **{vocabulary}** piece of this statement by describ
 
 Asset:: A digital file or stream of data containing content and usually with associated metadata. 
 
-Rightsholder:: Person or organization that owns the legal rights to something. In this context preliminary holders of copyright and related rights.
+Rightholder:: Person or organization that owns the legal rights to something. In this context preliminary holders of copyright and related rights.
 
 Location-based identifiers:: A machine-readable location, such as a domain or URL, for use in identification of assets. 
 
@@ -45,7 +45,7 @@ AI/ML Training:: The pre-training, training and fine-tuning of AI Models.
 
 The vocabulary consists of the overarching Text and Data Mining (`TDM`) category and a number or more specific use cases that can be independently addressed. The overarching `TDM` category is derived from the definition of Text and Data mining in https://eur-lex.europa.eu/eli/dir/2019/790/oj#art_2.tit_1[Article 2(2) of the European Union's Copyright in the Digital Single Market Directive]. TDM includes not only the specific use cases currently included in this vocabulary, but also other forms of TDM for which additional categories could be defined in future, as technology evolves.
 
-For the purposes of this vocabulary, TDM is not understood to cover indexing of content for the purpose of online search. This use case is addressed using a `location-based` schema such as the exiting https://datatracker.ietf.org/doc/html/rfc9309[Robots Exclusion Protocol]. 
+For the purposes of this vocabulary, TDM is not understood to cover indexing of content for the purpose of online search. This use case is addressed using a `location-based` schema such as the existing https://datatracker.ietf.org/doc/html/rfc9309[Robots Exclusion Protocol]. 
 
 Currently the proposed vocabulary contains two use cases that relate to the use of assets for AI/ML training purposes.
 

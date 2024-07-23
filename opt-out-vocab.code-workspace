@@ -7,6 +7,7 @@
 	"settings": {
 		"asciidoc.antora.enableAntoraSupport": true,
 		"cSpell.words": [
+			"Rightholder",
 			"rightsholders"
 		]
 	}
