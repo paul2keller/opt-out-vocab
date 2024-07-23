@@ -65,9 +65,9 @@ This list of categories may be expanded with categories addressing additional us
 
 === Relationship
 
-The `TDM` category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rights-holder opts out of or reserves the rights to `TDM`, they are opting out of those other categories as well. The other categories can be independently addressed and affect only the specific use case covered by the category. 
+The `TDM` category is the overarching category that includes the various types of AI training, as they are considered to be forms of TDM.  As such, if a rights-holder opts out of or reserves the rights to `TDM`, they are opting out of  other categories that may be defined in the future as well. Of course, those other categories could be independently addressed so as to affect only the specific use case covered by that category. 
 
-<<categories-diagram, The figure below>> shows the relationship between the categories.
+<<categories-diagram, The figure below>> shows the relationship between the currently defined categories.
 
 [[categories.diagram]]
 .Relationship between the categories
