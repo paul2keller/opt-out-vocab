@@ -17,7 +17,7 @@ toc::[]
 // [abstract]
 == Abstract
 
-This document provides a common vocabulary that seeks to standardize machine readable rights reservations and other rightholder opt-outs from using works protected by copyright and related rights in the context of AI/ML training and other forms of Text and Data Mininig (TDM). It has been developed to adress one of the issues identified in this April 2024 policy brief by https://openfuture.eu[Open Future]: https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf[Considerations for opt-out compliance policies by AI model developers]. The paper dentifies four different concepts that require consensus among stakeholders in order to ensure that opt-outs / rights reservation can be expressed in a way that is effective, scalable, and able to meet the needs of both rights holders and AI model developers. the four concepts are (in bold): 
+This document provides a common vocabulary that seeks to standardize machine readable rights reservations and other rightholder opt-outs from using works protected by copyright and related rights in the context of AI/ML training and other forms of Text and Data Mining (TDM). It has been developed to address one of the issues identified in this April 2024 policy brief by https://openfuture.eu[Open Future]: https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf[Considerations for opt-out compliance policies by AI model developers]. The paper identifies four different concepts that require consensus among stakeholders in order to ensure that opt-outs / rights reservation can be expressed in a way that is effective, scalable, and able to meet the needs of both rights holders and AI model developers. the four concepts are (in bold): 
 
 > If you tell us what **{identifier}** you want to opt out from which uses **{vocabulary}** via these means **{infrastructure}** then we will do this **{effect of opt-out}**.
 
@@ -33,17 +33,19 @@ This document focuses on the **{vocabulary}** piece of this statement by describ
 
 Asset:: A digital file or stream of data containing content and usually with associated metadata. 
 
-Rightsholder:: Person or organization that owns the legal rights to something. In this context preliminary holders of copyright and related rights.
+Rightholder:: Person or organization that owns the legal rights to something. In this context preliminary holders of copyright and related rights.
 
 Location-based identifiers:: A machine-readable location, such as a domain or URL, for use in identification of assets. 
 
 Unit-based identifiers:: A machine-readable piece of information that identifies a single asset (unit), regardless of where the asset is located, either through the embedding of that information directly into the asset or via a separate database or registry.
 
-AI/ML Training:: The pre-training, training and fine-tuning of AI Models before their release. 
+AI/ML Training:: The pre-training, training and fine-tuning of AI Models. 
 
 == Structure
 
-The vocabulary consists of the overarching Text and Data Mining (`TDM`) category and a number or more specific use cases that can be independently adressed. The overarching `TDM` category is derived from the definition of Text and Data mining in https://eur-lex.europa.eu/eli/dir/2019/790/oj#art_2.tit_1[Article 2(2) of the European Union's Copyright in the Digital Single Market Directive]. For the purposes of this vocabulary, TDM is not understood to cover indexing of content for the purpose of online search. This use case is addressed using a `location-based` schema such as the exiting https://datatracker.ietf.org/doc/html/rfc9309[Robots Exclusion Protocol]. 
+The vocabulary consists of the overarching Text and Data Mining (`TDM`) category and a number or more specific use cases that can be independently addressed. The overarching `TDM` category is derived from the definition of Text and Data mining in https://eur-lex.europa.eu/eli/dir/2019/790/oj#art_2.tit_1[Article 2(2) of the European Union's Copyright in the Digital Single Market Directive]. TDM includes not only the specific use cases currently included in this vocabulary, but also other forms of TDM for which additional categories could be defined in future, as technology evolves.
+
+For the purposes of this vocabulary, TDM is not understood to cover indexing of content for the purpose of online search. This use case is addressed using a `location-based` schema such as the existing https://datatracker.ietf.org/doc/html/rfc9309[Robots Exclusion Protocol]. 
 
 Currently the proposed vocabulary contains two use cases that relate to the use of assets for AI/ML training purposes.
 
@@ -63,9 +65,9 @@ This list of categories may be expanded with categories addressing additional us
 
 === Relationship
 
-The `TDM` category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rights-holder opts out of or reserves the rights to `TDM`, they are opting out of those other categories as well. The other categories can be independently addressed and affect only the specific use case covered by the category. 
+The `TDM` category is the overarching category that includes the various types of AI training, as they are considered to be forms of TDM.  As such, if a rights-holder opts out of or reserves the rights to `TDM`, they are opting out of  other categories that may be defined in the future as well. Of course, those other categories could be independently addressed so as to affect only the specific use case covered by that category. 
 
-<<categories-diagram, The figure below>> shows the relationship between the categories.
+<<categories-diagram, The figure below>> shows the relationship between the currently defined categories.
 
 [[categories.diagram]]
 .Relationship between the categories
