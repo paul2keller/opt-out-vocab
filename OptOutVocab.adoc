@@ -55,7 +55,7 @@ Currently the proposed vocabulary contains two use cases that relate to the use 
 
 The following categories are proposed for use in the Opt-Out Vocabulary.
 
-TDM:: Text and Data Mining. The act of using one or more assets in the context of any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations for purposes other than scientific reserach.
+TDM:: Text and Data Mining. The act of using one or more assets in the context of any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations for purposes other than scientific research.
 
 AI Training:: The act of training AI/ML models that are NOT capable of generating text, images, and other synthetic content on one or more assets as input. Examples are models than can be used for classification or object detection.
 
