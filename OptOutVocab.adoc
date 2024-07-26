@@ -8,7 +8,8 @@ Leonard Rosenthol <lrosenth@adobe.com>, Paul Keller <paul@openfuture.eu>
 ifdef::backend-pdf[]
 [.authors]
 // {author} + 
-{revnumber} {revremark} : {revdate}
+// {revnumber} {revremark} : {revdate}
+{revnumber} : {revdate}
 endif::[]
 
 // table of contents goes here
