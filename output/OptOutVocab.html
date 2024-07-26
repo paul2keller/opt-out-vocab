@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
-<meta name="author" content="Leonard Rosenthol">
+<meta name="author" content="Leonard Rosenthol &lt;lrosenth@adobe.com&gt;, Paul Keller &lt;paul@openfuture.eu&gt;">
 <title>Opt-Out Vocabulary</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -439,126 +439,100 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>Opt-Out Vocabulary</h1>
 <div class="details">
-<span id="author" class="author">Leonard Rosenthol</span><br>
-<span id="email" class="email"><a href="mailto:lrosenth@adobe.com">lrosenth@adobe.com</a></span><br>
+<span id="author" class="author">Leonard Rosenthol &lt;lrosenth@adobe.com&gt;, Paul Keller &lt;paul@openfuture.eu&gt;</span><br>
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">2024-07-19</span>
-<br><span id="revremark">DRAFT</span>
+<span id="revdate">2024-07-26</span>
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_purpose">1. Purpose</h2>
 <div class="sectionbody">
-<div id="toc" class="toc">
-<div id="toctitle" class="title">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_abstract">Abstract</a></li>
-<li><a href="#_terms_and_definitions">1. Terms and Definitions</a></li>
-<li><a href="#_structure">2. Structure</a></li>
-<li><a href="#_proposed_vocabulary">3. Proposed Vocabulary</a>
-<ul class="sectlevel2">
-<li><a href="#_categories">3.1. Categories</a></li>
-<li><a href="#_relationship">3.2. Relationship</a></li>
-</ul>
-</li>
-</ul>
+<div class="paragraph">
+<p>The purpose of this document is to provide a common vocabulary that can be used for machine-readable rights reservations / opt-outs by rightholders who wish to restrict the use of their works and other subject matter for the purpose of AI/ML training and other forms of Text and Data Mining (TDM).</p>
+</div>
+<div class="paragraph">
+<p>The elements of the vocabulary can be used to describe in a standardized way the types of uses that a rightholder may wish to restrict (or allow), thereby ensuring that rights reservations / opt-outs can be communicated, processed and stored in a consistent and interoperable manner. The vocabulary is agnostic to the technical implementations of opt-out systems and is designed to ensure that opt-out information can be effectively exchanged between different systems.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_abstract">Abstract</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This document provides a common vocabulary that seeks to standardize machine readable rights reservations and other rightholder opt-outs from using works protected by copyright and related rights in the context of AI/ML training and other forms of Text and Data Mininig (TDM). It has been developed to adress one of the issues identified in this April 2024 policy brief by <a href="https://openfuture.eu">Open Future</a>: <a href="https://openfuture.eu/wp-content/uploads/2024/05/240516considerations_of_opt-out_compliance_policies.pdf">Considerations for opt-out compliance policies by AI model developers</a>. The paper dentifies four different concepts that require consensus among stakeholders in order to ensure that opt-outs / rights reservation can be expressed in a way that is effective, scalable, and able to meet the needs of both rights holders and AI model developers. the four concepts are (in bold):</p>
-</div>
-<div class="quoteblock">
-<blockquote>
-<div class="paragraph">
-<p>If you tell us what <strong>{identifier}</strong> you want to opt out from which uses <strong>{vocabulary}</strong> via these means <strong>{infrastructure}</strong> then we will do this <strong>{effect of opt-out}</strong>.</p>
-</div>
-</blockquote>
-</div>
-<div class="paragraph">
-<p>This document focuses on the <strong>{vocabulary}</strong> piece of this statement by describing a proposed opt-out Vocabulary that can be used to describe whether one or more assets may be used as part of a data mining or AI/ML training workflow. The purpose of the vocabulary is to provide a stable set of categories that can be used by rightholders to specify the scope of opt-outs / rights reservations they wish to make. A stable, well defined set of rights reservations will ensure that opt-out reservation can be exchanged across value change and that different systems to communicate, process and store opt-out &amp; rights reservations can be designed in an interoperable way. The vocabulary is implementation agnostic and can be implemented in a variety of opt-out schemes including <code>location-based</code> and <code>unit-based</code> schemes.</p>
-</div>
-<div style="page-break-after: always;"></div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_terms_and_definitions">1. Terms and Definitions</h2>
+<h2 id="_definitions">2. Definitions</h2>
 <div class="sectionbody">
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Asset</dt>
 <dd>
-<p>A digital file or stream of data containing content and usually with associated metadata.</p>
+<p>A digital file or stream of data containing protected works or other subject matter, usually with associated metadata.</p>
 </dd>
-<dt class="hdlist1">Rightsholder</dt>
+<dt class="hdlist1">Rightholder</dt>
 <dd>
-<p>Person or organization that owns the legal rights to something. In this context preliminary holders of copyright and related rights.</p>
-</dd>
-<dt class="hdlist1">Location-based identifiers</dt>
-<dd>
-<p>A machine-readable location, such as a domain or URL, for use in identification of assets.</p>
-</dd>
-<dt class="hdlist1">Unit-based identifiers</dt>
-<dd>
-<p>A machine-readable piece of information that identifies a single asset (unit), regardless of where the asset is located, either through the embedding of that information directly into the asset or via a separate database or registry.</p>
+<p>A person or organization that owns the legal rights to something. In this context, holders of copyright and related rights.</p>
 </dd>
 <dt class="hdlist1">AI/ML Training</dt>
 <dd>
-<p>The pre-training, training and fine-tuning of AI Models before their release.</p>
+<p>The pre-training, training, and fine-tuning of AI models.</p>
 </dd>
 </dl>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_structure">2. Structure</h2>
+<h2 id="_vocabulary_structure">3. Vocabulary Structure</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The vocabulary consists of the overarching Text and Data Mining (<code>TDM</code>) category and a number or more specific use cases that can be independently adressed. The overarching <code>TDM</code> category is derived from the definition of Text and Data mining in <a href="https://eur-lex.europa.eu/eli/dir/2019/790/oj#art_2.tit_1">Article 2(2) of the European Union&#8217;s Copyright in the Digital Single Market Directive</a>. For the purposes of this vocabulary, TDM is not understood to cover indexing of content for the purpose of online search. This use case is addressed using a <code>location-based</code> schema such as the exiting <a href="https://datatracker.ietf.org/doc/html/rfc9309">Robots Exclusion Protocol</a>.</p>
-</div>
-<div class="paragraph">
-<p>Currently the proposed vocabulary contains two use cases that relate to the use of assets for AI/ML training purposes.</p>
+<p>The vocabulary consists of the overarching TDM (Text and Data Mining) category and a number of specific use cases that can be addressed independently. The overarching category <code>TDM</code> corresponds to the definition of Text and Data Mining in <a href="https://eur-lex.europa.eu/eli/dir/2019/790/oj#d1e845-92-1">Article 2(2) of the European Union Directive on Copyright in the Digital Single Market</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_proposed_vocabulary">3. Proposed Vocabulary</h2>
+<h2 id="_proposed_vocabulary">4. Proposed Vocabulary</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_categories">3.1. Categories</h3>
 <div class="paragraph">
-<p>The following categories are proposed for use in the Opt-Out Vocabulary.</p>
+<p>The following categories are defined for use in the opt-out vocabulary:</p>
 </div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">TDM</dt>
+<dt class="hdlist1"><code>TDM</code></dt>
 <dd>
-<p>Text and Data Mining. The act of using one or more assets in the context of any automated analytical technique aimed at analysing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations for purposes other than scientific reserach.</p>
+<p>Text and Data Mining. The act of using one or more assets in the context of any automated analytical technique aimed at analyzing text and data in digital form in order to generate information which includes but is not limited to patterns, trends and correlations for purposes other than scientific research.</p>
 </dd>
-<dt class="hdlist1">AI Training</dt>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+For the purposes of this vocabulary, TDM is not intended to cover the indexing of content for the purpose of online search. This use case is addressed by the existing <a href="https://datatracker.ietf.org/doc/html/rfc9309">Robots Exclusion Protocol</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><code>Generative AI Training</code></dt>
 <dd>
-<p>The act of training AI/ML models that are NOT capable of generating text, images, and other synthetic content on one or more assets as input. Examples are models than can be used for classification or object detection.</p>
+<p>The act of training AI/ML models that are capable of generating text, images, and other synthetic content using one or more assets as input.</p>
 </dd>
-<dt class="hdlist1">Generative AI Training</dt>
+<dt class="hdlist1"><code>AI Training</code></dt>
 <dd>
-<p>The act of training AI/ML models that are capable of generating text, images, and other synthetic content on one or more assets as input.</p>
+<p>The act of training AI/ML models that are NOT capable of generating text, images, and other synthetic content using one or more assets as input. Examples include models that can be used for classification or object detection.</p>
 </dd>
 </dl>
 </div>
 <div class="paragraph">
-<p>This list of categories may be expanded with categories addressing additional uses cases should such use cases emerge. In addition to these categories defined in the vocabulary, it is also expected that some systems implementing this vocabulary may extend this list with additional categories for their particular needs.</p>
-</div>
+<p>This list of categories may be expanded in the future, should a consensus emerge between stakeholders, to include categories that address additional use cases as they emerge. In addition to these categories defined in the vocabulary, it is also expected that some systems implementing this vocabulary may extend this list with additional categories for their particular needs. Systems referencing the vocabulary must not introduce additional categories that encompass existing categories defined in the vocabulary.</p>
 </div>
 <div class="sect2">
-<h3 id="_relationship">3.2. Relationship</h3>
+<h3 id="_relationship">4.1. Relationship</h3>
 <div class="paragraph">
-<p>The <code>TDM</code> category is the overarching category that includes not only its own use cases, but also the various types of AI training, as they are considered to be forms of TDM.  As such, if a rights-holder opts out of or reserves the rights to <code>TDM</code>, they are opting out of those other categories as well. The other categories can be independently addressed and affect only the specific use case covered by the category.</p>
+<p>The <code>TDM</code> category is the overarching category that includes the two categories related to AI/ML training, as they are considered to be forms of <code>TDM</code>. As such, when a rights holder reserves the rights to <code>TDM</code>, they also opt out of these categories. AI model developers processing opt-outs must therefore interpret an opt-out from <code>TDM</code> to also mean an opt-out from <code>Generative AI Training</code> and <code>AI Training</code>. All categories other than <code>TDM</code> can be addressed independently to affect only the specific use case covered by that category.</p>
 </div>
 <div class="paragraph">
-<p><a href="#categories-diagram">The figure below</a> shows the relationship between the categories.</p>
+<p><a href="#categories-diagram">The figure below</a> shows the relationship between the currently defined categories:</p>
 </div>
 <div id="categories.diagram" class="imageblock">
 <div class="content">
@@ -569,11 +543,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_usage">5. Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The vocabulary may be used by declaring that an opt-out system or entity expressing or processing opt-outs uses the terms defined in <a href="#_proposed_vocabulary">Proposed Vocabulary</a> in accordance with how they are defined in this document.</p>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2024-07-19 16:44:50 UTC
+Last updated 2024-07-26 12:02:06 UTC
 </div>
 </div>
 </body>
