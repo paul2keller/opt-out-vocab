@@ -62,4 +62,4 @@ image::categories.drawio.svg[Example diagram showing the relationship between th
 
 == Usage
 
-The vocabulary may be used by declaring that an opt-out system or entity expressing or processing opt-outs uses the terms defined in <<_proposed_vocabulary>> in accordance with how they are defined in this document.
+The vocabulary may be used by declaring that an opt-out system or entity expressing or processing opt-outs uses the terms defined in <<_proposed_vocabulary>>,directly or via mappings, in accordance with how they are defined in this document.
